@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Dobro dosli u najbolji kafic na svetu">
+    <meta name="keywords" content="Kafic">
+   <!-- custom styles -->
+   <link rel="stylesheet" href="src/styles/style.css">
+   
+   <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Hotel Blossoms - Book a room</title>
+</head>
+ <body>
+    <header>
+        <nav id="navbar">
+        <div class="container">
+                <h1 class="logo"><a href="index.html">HOTEL BLOSSOMS</a></h1>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                     <li><a class="current" href="booking.html">Book Now</a></li>
+                </ul>
+              </div>
+            </nav>  
+    </header>
+    <div class="container1">
+      <h2>Book a Room</h2>
+      <form id="bookingForm" action="/users" method="post">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="checkin">Check-in Date:</label>
+          <input type="date" id="checkin" name="checkin" required >
+        </div>
+        <div>
+          <label for="checkout">Check-out Date:</label>
+          <input type="date" id="checkout" name="checkout" required>
+        </div>
+        <div>
+          <label for="roomType">Room Type:</label>
+          <select id="roomType" name="roomType" required>
+            <option value="">-- Select Room Type --</option>
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="suite">Suite</option>
+          </select>
+        </div>
+        <div>
+          <button type="submit">Book Now</button>
+        </div>
+      </form>
+    </div>
+
+    
+ </body>
+</html>

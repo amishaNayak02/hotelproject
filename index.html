@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Designed by:LjoveX
+         It is 100% free to use-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Dobro dosli u najbolji kafic na svetu">
+    <meta name="keywords" content="Kafic">
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+   <!---- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">-->
+   <!-- custom styles -->
+    <link rel="stylesheet" href="src/styles/style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Hotel Blossoms - Hello</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+        <div class="container">
+                <h1 class="logo"><a href="index.html">HOTEL BLOSSOMS</a></h1>
+                <ul>
+                    <li><a class="current" href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                     <li><a  href="booking.html">Book Now</a></li>
+                </ul>
+              </div>
+            </nav>  
+        
+         <div id="showcase">
+          
+           <div class="container">
+               <div class="showcase-content">
+                
+                   <h1><span class="text-primary">Enjoy</span> your stay</h1>
+                   <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aperiam quos quisquam obcaecati illo facilis.</p>
+                   <a class="btn" href="about.html">About our hotel</a>
+               </div>
+           </div>
+           </div>
+         </div>   
+    </header>
+    <section id="home-info" class="bg-dark">
+        <div class="info-img"></div>
+        <div class="info-content">
+          <h2><span class="text-primary">History</span> of our Hotel</h2>
+          <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
+              aliquam dolor alias iste autem, quaerat magni unde accusantium qui
+              fuga placeat quidem quo pariatur, voluptatum, ea sequi? Corporis,
+              explicabo quisquam dolor placeat praesentium nesciunt mollitia quos
+              nobis natus voluptatum asperiores!
+          </p>
+          <a href="about.html" class="btn btn-light">Read More</a>
+        </div>
+      </section>
+       <section id="features">
+           <div class="box bg-light">
+            <i class="fas fa-hotel fa-3x"></i>
+               <h3>Great Location</h3>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, officiis.</p>
+           </div>
+           <div class="box bg-primary">
+            <i class="fas fa-utensils fa-3x"></i>
+            <h3>Free Meals</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, officiis.</p>
+           </div>
+           <div class="box bg-light">
+            <i class="fas fa-dumbbell fa-3x"></i>
+            <h3>Gym</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, officiis.</p>
+           </div>
+       </section>
+       
+      <section id="contact-form" class="py-3 ">
+        <div class="container">
+           <h1 class="l-heading"><span class="text-primary">Contact </span> Us</h1>
+           <p>Please fill in all spots so you can contact us</p>
+           <form action="process.php">
+               <div class="form-group">
+                  <laber for="name">Name</laber>
+                  <input type="text" name="Name" id="Name">
+               </div>
+               <div class="form-group">
+                  <laber for="email">Email</laber>
+                  <input type="email" name="email" id="email">
+               </div>
+               <div class="form-group">
+                  <laber for="message">Message</laber>
+                  <textarea type="text" name="message" id="message"></textarea>
+               </div>
+               <div class="form-group">
+                <laber for="query">Ask for queries.</laber>
+                <textarea type="text" name="query" id="query"></textarea>
+             </div>
+             <div class="form-group">
+                <laber for="feedback">feedback</laber>
+                <textarea type="text" name="feedback" id="feedback"></textarea>
+             </div>
+               <button type="submit" class="btn">Submit</button>
+           </form>
+        </div>
+    </section>
+    <div class="container1">
+        <h2>Book a Room</h2>
+        <form id="bookingForm">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required >
+          </div>
+          <div>
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+          </div>
+          <div>
+            <label for="roomType">Room Type:</label>
+            <select id="roomType" name="roomType" required>
+              <option value="">-- Select Room Type --</option>
+              <option value="single">Single</option>
+              <option value="double">Double</option>
+              <option value="suite">Suite</option>
+            </select>
+          </div>
+          <div>
+            <button id="bookingBtn" type="submit">Book Now</button>
+          </div>
+        </form>
+      </div>
+
+     
+       <footer id="main-footer">        
+       </footer>
+    <div>
+       <div class="footer">
+        <h4>HOTEL BOOKING MANAGEMENT SYSTEM @2023</h4>
+       </div>
+    
+    
+
+
+       <script src="index.js"></script>
+</body>
+</html>
